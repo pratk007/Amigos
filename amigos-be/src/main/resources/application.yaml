@@ -1,0 +1,26 @@
+server:
+  port: 8080
+  error:
+    include-message: always
+    include-binding-errors: always
+
+#debug: true
+
+spring:
+  application:
+    name: amigos
+
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3307/amigos-be
+    username: root
+    password: prateek-raj
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+#  liquibase:
+#    enabled: true
+#    change-log: classpath:/changelog-master.xml
